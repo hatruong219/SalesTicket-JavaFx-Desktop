@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Home.Controller_Home">
+   <children>
+      <Pane layoutY="1.0" prefHeight="157.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="253.0" layoutY="5.0" prefHeight="17.0" prefWidth="95.0" text="TÌM CHUYẾN TÀU" />
+            <Label layoutX="21.0" layoutY="34.0" text="CHỌN GA ĐI" />
+            <ComboBox fx:id="cbDeparture" layoutX="106.0" layoutY="30.0" prefHeight="25.0" prefWidth="174.0" promptText="Chọn ga ?" />
+            <Label layoutX="307.0" layoutY="35.0" text="CHỌN GA ĐẾN" />
+            <ComboBox fx:id="cbDestination" layoutX="398.0" layoutY="30.0" prefHeight="25.0" prefWidth="174.0" promptText="Chọn ga ?" />
+            <Label layoutX="21.0" layoutY="78.0" text="CHỌN NGÀY" />
+            <DatePicker fx:id="dpDate" layoutX="106.0" layoutY="74.0" />
+            <Label layoutX="307.0" layoutY="78.0" text="CHỌN GIỜ" />
+            <ComboBox fx:id="cbTime" layoutX="398.0" layoutY="74.0" prefHeight="25.0" prefWidth="174.0" promptText="Giờ ?" />
+            <Button fx:id="btnSearch" layoutX="198.0" layoutY="117.0" mnemonicParsing="false" onAction="#ButtonSearch" prefHeight="25.0" prefWidth="218.0" text="TÌM KIẾM" />
+         </children>
+      </Pane>
+      <TabPane fx:id="tpSearch" layoutY="158.0" prefHeight="149.0" prefWidth="601.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="TOA A">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="128.0" prefWidth="601.0">
+                     <children>
+                        <GridPane layoutX="14.0" prefHeight="121.0" prefWidth="579.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.3333740234375" minWidth="10.0" prefWidth="86.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.3333740234375" minWidth="10.0" prefWidth="88.66666666666669" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.3333740234375" minWidth="0.0" prefWidth="86.3333740234375" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="537.3333129882812" minWidth="0.0" prefWidth="88.99995930989581" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="537.3333129882812" minWidth="10.0" prefWidth="80.33333333333331" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="537.3333129882812" minWidth="10.0" prefWidth="86.33333333333331" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="537.3333129882812" minWidth="10.0" prefWidth="81.66666666666663" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <RadioButton fx:id="rb1" mnemonicParsing="false" text="1" />
+                              <RadioButton fx:id="rb2" mnemonicParsing="false" text="2" GridPane.columnIndex="1" />
+                              <RadioButton fx:id="rb3" mnemonicParsing="false" text="3" GridPane.columnIndex="2" />
+                              <RadioButton fx:id="rb4" mnemonicParsing="false" text="4" GridPane.columnIndex="3" />
+                              <RadioButton fx:id="rb5" mnemonicParsing="false" text="5" GridPane.columnIndex="4" />
+                              <RadioButton fx:id="rb6" mnemonicParsing="false" text="6" GridPane.columnIndex="5" />
+                              <RadioButton fx:id="rb7" mnemonicParsing="false" text="7" GridPane.columnIndex="6" />
+                              <RadioButton fx:id="rb8" mnemonicParsing="false" text="8" GridPane.rowIndex="1" />
+                              <RadioButton fx:id="rb9" mnemonicParsing="false" text="9" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <RadioButton fx:id="rb10" mnemonicParsing="false" text="10" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <RadioButton fx:id="rb11" mnemonicParsing="false" text="11" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                              <RadioButton fx:id="rb12" mnemonicParsing="false" text="12" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                              <RadioButton fx:id="rb13" mnemonicParsing="false" text="13" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                              <RadioButton fx:id="rb14" mnemonicParsing="false" text="14" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="TOA B">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane layoutX="18.0" prefHeight="121.0" prefWidth="561.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.3333740234375" minWidth="10.0" prefWidth="86.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.3333740234375" minWidth="10.0" prefWidth="88.66666666666669" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.3333740234375" minWidth="0.0" prefWidth="86.3333740234375" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="537.3333129882812" minWidth="0.0" prefWidth="88.99995930989581" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="537.3333129882812" minWidth="10.0" prefWidth="80.33333333333331" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="537.3333129882812" minWidth="10.0" prefWidth="86.33333333333331" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="537.3333129882812" minWidth="10.0" prefWidth="81.66666666666663" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <RadioButton fx:id="rb15" mnemonicParsing="false" text="15" />
+                              <RadioButton fx:id="rb16" mnemonicParsing="false" text="16" GridPane.columnIndex="1" />
+                              <RadioButton fx:id="rb17" mnemonicParsing="false" text="17" GridPane.columnIndex="2" />
+                              <RadioButton fx:id="rb18" mnemonicParsing="false" text="18" GridPane.columnIndex="3" />
+                              <RadioButton fx:id="rb19" mnemonicParsing="false" text="19" GridPane.columnIndex="4" />
+                              <RadioButton fx:id="rb20" mnemonicParsing="false" text="20" GridPane.columnIndex="5" />
+                              <RadioButton fx:id="rb21" mnemonicParsing="false" text="21" GridPane.columnIndex="6" />
+                              <RadioButton fx:id="rb22" mnemonicParsing="false" text="22" GridPane.rowIndex="1" />
+                              <RadioButton fx:id="rb23" mnemonicParsing="false" text="23" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <RadioButton fx:id="rb24" mnemonicParsing="false" text="24" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <RadioButton fx:id="rb25" mnemonicParsing="false" text="25" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                              <RadioButton fx:id="rb26" mnemonicParsing="false" text="26" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                              <RadioButton fx:id="rb27" mnemonicParsing="false" text="27" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                              <RadioButton fx:id="rb28" mnemonicParsing="false" text="28" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Pane layoutY="320.0" prefHeight="79.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="52.0" layoutY="24.0" text="TỔNG TIỀN" />
+            <TextField disable="true" layoutX="138.0" layoutY="20.0" />
+            <Button fx:id="btnBuyTrain" layoutX="380.0" layoutY="20.0" mnemonicParsing="false" onAction="#BuyTrain" prefHeight="25.0" prefWidth="174.0" text="ĐẶT VÉ" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="427.0" prefWidth="743.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Home.LoginController">
+   <children>
+      <Pane layoutX="440.0" layoutY="10.0" prefHeight="409.0" prefWidth="293.0" style="-fx-background-color: #EA4335;">
+         <children>
+            <Label layoutX="112.0" layoutY="46.0" text="Sign in" textFill="#fefefe">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfPhone" layoutX="38.0" layoutY="127.0" prefHeight="28.0" prefWidth="209.0" promptText="Số điện thoại người dùng" />
+            <PasswordField fx:id="pfPass" layoutX="38.0" layoutY="200.0" prefHeight="28.0" prefWidth="209.0" promptText="Mật khẩu" />
+            <Button fx:id="btnLogin" layoutX="34.0" layoutY="277.0" mnemonicParsing="false" onAction="#Login" prefHeight="37.0" prefWidth="216.0" style="-fx-background-color: #0A5E65;" text="Login" textFill="WHITE" />
+         </children></Pane>
+      <ImageView fitHeight="441.0" fitWidth="427.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/vdvd.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="40.0" layoutY="87.0" prefHeight="85.0" prefWidth="348.0" text="CHÀO MỪNG ĐẾN VỚI HỆ THỐNG BÁN VÉ TRỰC TUYẾN" textFill="#eeeeee" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="179.0" text="Nếu chưa có tài khoản hãy đăng ký ngay" textFill="#fefefe">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRegister1" layoutX="40.0" layoutY="230.0" mnemonicParsing="false" onAction="#Register" prefHeight="37.0" prefWidth="229.0" style="-fx-background-color: #EA4335;" text="Register" textFill="WHITE" />
+   </children>
+</AnchorPane>

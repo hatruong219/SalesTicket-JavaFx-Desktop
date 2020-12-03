@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="484.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Home.Controller_Information">
+   <children>
+      <Label layoutX="229.0" layoutY="27.0" text="THÔNG TIN KHÁCH HÀNG" />
+      <GridPane layoutX="92.0" layoutY="68.0" prefHeight="339.0" prefWidth="415.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="TÊN KHÁCH HÀNG" />
+            <Label text="SỐ CMND / CĂN CƯỚC" GridPane.rowIndex="1" />
+            <Label text="PHONE" GridPane.rowIndex="2" />
+            <Label text="GA ĐI" GridPane.rowIndex="3" />
+            <Label text="GA ĐẾN" GridPane.rowIndex="4" />
+            <Label text="NGÀY XUẤT PHÁT" GridPane.rowIndex="5" />
+            <Label text="GIỜ XUẤT PHÁT" GridPane.rowIndex="6" />
+            <Label text="VỊ TRÍ CHỖ NGỒI" GridPane.rowIndex="7" />
+            <Label text="TỔNG TIỀN" GridPane.rowIndex="8" />
+            <TextField fx:id="tfNameCustommer" GridPane.columnIndex="1" />
+            <TextField fx:id="tfIDCard" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="tfPhone" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="tfDeparture" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="tfDestination" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="tfDate" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="tfTime" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="tfSeat" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="tfTotal" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+         </children>
+      </GridPane>
+      <Button layoutX="186.0" layoutY="428.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="228.0" text="ĐẶT VÉ" />
+   </children>
+</AnchorPane>

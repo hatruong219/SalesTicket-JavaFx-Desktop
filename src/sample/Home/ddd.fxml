@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Home.cddd">
+   <children>
+      <TabPane layoutX="7.0" layoutY="7.0" prefHeight="200.0" prefWidth="587.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Untitled Tab 1">
+            <content>
+              <AnchorPane  minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <RadioButton fx:id="rb3" layoutX="185.0" layoutY="54.0" mnemonicParsing="false" text="xe3" />
+                        <RadioButton fx:id="rb4" layoutX="174.0" layoutY="96.0" mnemonicParsing="false" text="xe4" />
+                        <RadioButton fx:id="rb2" layoutX="378.0" layoutY="87.0" mnemonicParsing="false" text="xe2" />
+                        <RadioButton fx:id="rb1" layoutX="335.0" layoutY="37.0" mnemonicParsing="false" text="xe1" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Untitled Tab 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <RadioButton fx:id="rb5" layoutX="184.0" layoutY="77.0" mnemonicParsing="false" text="xx" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
